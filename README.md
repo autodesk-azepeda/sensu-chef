@@ -125,8 +125,8 @@ Enables and starts Sensu Enterprise.
 
 `node.sensu.use_ssl` - If Sensu and RabbitMQ are to use SSL.
 
-`node.sensu.user` - The user who owns all sensu files and directories. Default
-"sensu".
+`node.sensu.user` - The user who owns all sensu files and directories.
+Default "sensu".
 
 `node.sensu.group` - The group that owns all sensu files and directories.
 Default "sensu".
@@ -139,6 +139,12 @@ Sensu services, "sysv" and "runit" are currently supported.
 
 `node.sensu.service_max_wait` - How long service scripts should wait
 for Sensu to start/stop.
+
+`node.sensu.config_data_bag_key` - The data bag to use for Sensu/RabbitMQ
+credentials.  Default "sensu"
+
+`node.sensu.data_bag_secret_path` - The path (also takes a URL) to fetch the
+data bag secret key from.  Default: `nil`.
 
 ### RabbitMQ
 
